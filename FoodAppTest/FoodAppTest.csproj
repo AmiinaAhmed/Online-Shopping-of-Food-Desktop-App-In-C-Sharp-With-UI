@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8631741C-2C04-41A9-929B-0F16459B7A5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FoodAppTest</RootNamespace>
+    <AssemblyName>FoodAppTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu UI WinForms 1.5.5.3\Bunifu UI WinForms 1.5.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutUsShowUserControl.Designer.cs">
+      <DependentUpon>AboutUsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOrCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOrCustomer.Designer.cs">
+      <DependentUpon>AdminOrCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category1DessertsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category1DessertsShowUserControl.Designer.cs">
+      <DependentUpon>Category1DessertsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category1DrinksShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category1DrinksShowUserControl.Designer.cs">
+      <DependentUpon>Category1DrinksShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category1FoodsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category1FoodsShowUserControl.Designer.cs">
+      <DependentUpon>Category1FoodsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category2DessertsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category2DessertsShowUserControl.Designer.cs">
+      <DependentUpon>Category2DessertsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category2DrinksShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category2DrinksShowUserControl.Designer.cs">
+      <DependentUpon>Category2DrinksShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category2FoodsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category2FoodsShowUserControl.Designer.cs">
+      <DependentUpon>Category2FoodsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category3DessertsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category3DessertsShowUserControl.Designer.cs">
+      <DependentUpon>Category3DessertsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category3DrinksShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category3DrinksShowUserControl.Designer.cs">
+      <DependentUpon>Category3DrinksShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category3FoodsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category3FoodsShowUserControl.Designer.cs">
+      <DependentUpon>Category3FoodsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category4DessertsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category4DessertsShowUserControl.Designer.cs">
+      <DependentUpon>Category4DessertsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category4DrinksShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category4DrinksShowUserControl.Designer.cs">
+      <DependentUpon>Category4DrinksShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category4FoodsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category4FoodsShowUserControl.Designer.cs">
+      <DependentUpon>Category4FoodsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DessertsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DessertsShowUserControl.Designer.cs">
+      <DependentUpon>DessertsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrinksShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrinksShowUserControl.Designer.cs">
+      <DependentUpon>DrinksShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodieHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodieHome.Designer.cs">
+      <DependentUpon>FoodieHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodieWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodieWelcome.Designer.cs">
+      <DependentUpon>FoodieWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodsShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodsShowUserControl.Designer.cs">
+      <DependentUpon>FoodsShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeShowUserControl.Designer.cs">
+      <DependentUpon>HomeShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OffersShowUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OffersShowUserControl.Designer.cs">
+      <DependentUpon>OffersShowUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUsShowUserControl.resx">
+      <DependentUpon>AboutUsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOrCustomer.resx">
+      <DependentUpon>AdminOrCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category1DessertsShowUserControl.resx">
+      <DependentUpon>Category1DessertsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category1DrinksShowUserControl.resx">
+      <DependentUpon>Category1DrinksShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category1FoodsShowUserControl.resx">
+      <DependentUpon>Category1FoodsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category2DessertsShowUserControl.resx">
+      <DependentUpon>Category2DessertsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category2DrinksShowUserControl.resx">
+      <DependentUpon>Category2DrinksShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category2FoodsShowUserControl.resx">
+      <DependentUpon>Category2FoodsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category3DessertsShowUserControl.resx">
+      <DependentUpon>Category3DessertsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category3DrinksShowUserControl.resx">
+      <DependentUpon>Category3DrinksShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category3FoodsShowUserControl.resx">
+      <DependentUpon>Category3FoodsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category4DessertsShowUserControl.resx">
+      <DependentUpon>Category4DessertsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category4DrinksShowUserControl.resx">
+      <DependentUpon>Category4DrinksShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category4FoodsShowUserControl.resx">
+      <DependentUpon>Category4FoodsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DessertsShowUserControl.resx">
+      <DependentUpon>DessertsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrinksShowUserControl.resx">
+      <DependentUpon>DrinksShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodieHome.resx">
+      <DependentUpon>FoodieHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodieWelcome.resx">
+      <DependentUpon>FoodieWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodsShowUserControl.resx">
+      <DependentUpon>FoodsShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeShowUserControl.resx">
+      <DependentUpon>HomeShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OffersShowUserControl.resx">
+      <DependentUpon>OffersShowUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fast-food-and-space-on-bottom_23-2147695664.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pensaba-obesidad-afectaba-paises-altos.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pexels-photo-326278.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\appetizer-background-cuisine-326281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMinimize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnClose1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-label1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnFoods1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDessert1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picCart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ee.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eedb21ccd0dde41e5c17f73410821d99.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9bc23605e3efd58b1e61e9df6a410d64 copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ggg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c0efc029badd2070a71340ebe2cebaballl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepsi-mirinda-soda-bottles-17886158.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfff.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ds.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oi.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dff.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9bc23605e3efd58b1e61e9df6a410d64 copy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\95ac1c717b02fc732aa8cf5fe32f0c8a %281%29copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11784562865_566da0cf7f_b_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c833d4cb21870d9e4203196e81e0aa3fcopy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iced.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallery-1515448687-frozen-hot-chocolate-0005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4333b0e46c9f36cd11787b2a9c92063555.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ggg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Party-Disposable-milk-tea-cup-upset-plastic-cup-fruit-juice-sand-ice-cup-100pcs-600ml.jpg_640x640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06e166bff9ebfb2f5922753d8bf355aellll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c0efc029badd2070a71340ebe2cebaballl1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d1cfb9be316429afb0c6a1c87ec525c1jjjj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2e9533127adbb8455736b1b41188346c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ap-pepsi-new-bottle-4_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c6418cfe548ad9922999bc2e147e04ce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New-Fanta-bottle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rr1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ew.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tt.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oi1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eeee.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfds.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gfds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttr.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iiii.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yyy.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e66b%281%29_1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e66b%281%29_10241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e66b%281%29_10242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %288%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
